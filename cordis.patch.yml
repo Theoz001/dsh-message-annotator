@@ -1,0 +1,6 @@
+# Bundle patch layer: `dsh plugin add` applies this into the target profile's
+# composition tree, enabling the annotator on install (equivalent to appending
+# the same entry to the profile's cordis.patch.yml by hand).
+- insert:
+    - id: ui-annotator
+      name: '@deepseek-ai/dsh-client-ui-annotator'
